@@ -1,5 +1,20 @@
-// COLORS
 :root {
+  //COLOR
+  --color-eastbay: #484283;
   --color-black: #000;
   --color-white: #fff;
+  --color-accent: #f14f4f;
+  --color-mojo: #cc4949;
+
+  //INDENTATION
+  --grid-gap: 20px;
+  --main-offset: 40px;
+
+  //FONTS
+  --font-family: "Intro", sans-serif;
+  --midle-high: 700 30px / 140% var(--font-family);
+  --big-high: 600 36px / 140% var(--font-family);
+  --small: 400 14px / 140% var(--font-family);
+  --def: 400 16px / 140% var(--font-family);
+  --btn: 600 16px / 100% var(--font-family);
 }
