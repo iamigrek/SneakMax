@@ -85,4 +85,40 @@ a {
     color: var(--color-white);
     background-color: var(--color-accent);
   }
+  &--secondary {
+    color: var(--color-white);
+    background-color: var(--color-text);
+    &:hover {
+      background-color: var(--color-main-hover);
+    }
+  }
+}
+
+.title {
+  font: var(--midle-high);
+  color: var(--color-text);
+  margin: 0;
+}
+
+@import "mixins";
+.custom-checkbox {
+  @include custom-checkbox;
+  &__content {
+    color: var(--color-text);
+    padding-left: 35px;
+    &::before {
+      top: -3px;
+      border-color: var(--color-cameo);
+      width: 24px;
+      height: 24px;
+      border-radius: 4px;
+    }
+    &::after {
+      top: -3px;
+      width: 24px;
+      height: 24px;
+      background-image: url(../img/check.svg);
+      background-size: 15px 12px;
+    }
+  }
 }

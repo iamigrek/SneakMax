@@ -1,14 +1,22 @@
 :root {
   //COLOR
   --color-eastbay: #484283;
-  --color-black: #000;
+  --color-black: rgb(182, 116, 116);
   --color-white: #fff;
   --color-accent: #f14f4f;
+  --color-main-hover: #31343c;
   --color-mojo: #cc4949;
+  --color-text: #444b58;
+  --color-bg: #fff4ee;
+  --color-cameo: #dbbba9;
+  --color-gray: #b2b5bb;
 
   //INDENTATION
   --grid-gap: 20px;
   --main-offset: 40px;
+  --midle-offset: 30px;
+  --section-padding: 60px;
+  --small-offset: 10px;
 
   //FONTS
   --font-family: "Intro", sans-serif;
@@ -17,4 +25,6 @@
   --small: 400 14px / 140% var(--font-family);
   --def: 400 16px / 140% var(--font-family);
   --btn: 600 16px / 100% var(--font-family);
+  --price: 600 20px / 20px var(--font-family);
+  --prehigh-book: 400 24px / 24px var(--font-family);
 }
