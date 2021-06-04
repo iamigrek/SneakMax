@@ -70,6 +70,17 @@ a {
   outline: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -92,11 +103,24 @@ a {
       background-color: var(--color-main-hover);
     }
   }
+  &--thirdly {
+    color: var(--color-text);
+    border: 1px solid currentColor;
+    padding: 17px 42px;
+    &:hover {
+      background-color: var(--color-text);
+      color: var(--color-white);
+    }
+  }
 }
 
 .title {
   font: var(--midle-high);
   color: var(--color-text);
+  margin: 0;
+}
+
+.p-reset {
   margin: 0;
 }
 

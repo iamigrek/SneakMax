@@ -1,0 +1,32 @@
+.team {
+  background-color: var(--color-eastbay);
+  padding: 60px 0;
+  position: relative;
+  &__bg-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &__title {
+    color: var(--color-white);
+    margin-bottom: 40px;
+  }
+  &__list {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+    &-item {
+      img {
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__name {
+    display: block;
+    font: var(--name);
+    margin-bottom: 20px;
+  }
+}
