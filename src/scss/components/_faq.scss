@@ -1,0 +1,58 @@
+.faq {
+  padding: 60px 0;
+  &__title {
+    margin-bottom: 40px;
+  }
+  &__list {
+    max-width: 880px;
+    margin: 0 auto;
+  }
+}
+
+.faq-accordion {
+  border-bottom: 1px solid var(--color-mineshaft);
+  &:first-child {
+    border-top: 1px solid var(--color-mineshaft);
+  }
+  &__control {
+    width: 100%;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__title {
+    float: left;
+    font: var(--faq);
+  }
+  &__content {
+    color: rgba(36, 36, 36, 0.5);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    will-change: max-height;
+    transition: all 0.3s ease-out;
+    box-sizing: content-box;
+  }
+
+  &__icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url(../img/cross.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: transform 0.3s ease-out;
+  }
+}
+
+.open .faq-accordion__icon {
+  transform: rotate(45deg);
+}
+
+.open .faq-accordion__content {
+  opacity: 1;
+  padding-bottom: 20px;
+}
